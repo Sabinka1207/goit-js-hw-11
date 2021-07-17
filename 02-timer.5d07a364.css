@@ -1,0 +1,2 @@
+.timer{display:flex;height:60vh;justify-content:center;align-items:center}.field{display:flex;flex-direction:column;text-align:center;position:relative;padding-left:15px;padding-right:15px}.field:not(:last-child):after{content:":";position:absolute;right:-15px;font-size:100px}.value{font-size:100px}
+/*# sourceMappingURL=/parcel-project-template/02-timer.5d07a364.css.map */
