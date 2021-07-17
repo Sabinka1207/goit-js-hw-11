@@ -3,7 +3,7 @@ const delay = ms => {
   // Change this function
   return new Promise((resolve, reject) => {
     setTimeout(() => {
-      const isSuccess = false;
+      const isSuccess = true;
       
       if (isSuccess) {
         resolve(ms);
@@ -18,9 +18,9 @@ const delay = ms => {
 const logger = time => console.log(`Fulfilled after ${time}ms`);
 
 // Tests
-// delay(2000).then(logger); // Fulfilled after 2000ms
-// delay(1000).then(logger); // Fulfilled after 1000ms
-// delay(1500).then(logger); // Fulfilled after 1500ms
+delay(2000).then(logger); // Fulfilled after 2000ms
+delay(1000).then(logger); // Fulfilled after 1000ms
+delay(1500).then(logger); // Fulfilled after 1500ms
 
 // ======================= Subtask 2 =======================
 const users = [
@@ -59,8 +59,8 @@ const toggleUserState = (allUsers, username) => {
 };
 
 // The function should work like this
-// toggleUserState(users, 'Mango').then(console.table);
-// toggleUserState(users, 'Ajax').then(console.table);
+toggleUserState(users, 'Mango').then(console.table);
+toggleUserState(users, 'Ajax').then(console.table);
 
 // ======================= Subtask 3 =======================
 const randomIntegerFromInterval = (min, max) => {
