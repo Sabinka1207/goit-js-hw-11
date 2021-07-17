@@ -22,7 +22,7 @@ function onClick() {
     
     if (delta > 0) {
         const intervalId = setInterval(() => {
-            currentDate = Date.now() + 1000*60*60*7 +1000*60*55
+            currentDate = Date.now()
             delta = settledDate - currentDate
             let { days, hours, minutes, seconds } = convertMs(delta)
             // console.log("Settled interval : ", convertMs(delta))
